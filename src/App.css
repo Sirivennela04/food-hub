@@ -33,13 +33,13 @@ body {
 /* Feature Cards */
 .feature-card {
   background: white;
-  max-width: 360px; /* Set a maximum width for the cards */
-    margin: 0 auto; /* Center the cards */
-    padding: 20px; /* Adjust padding as needed */
+  max-width: 360px; 
+    margin: 0 auto; 
+    padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-    border: 1px solid #ddd; /* Optional: Add a border for better visibility */
+    border: 1px solid #ddd; 
 }
 
 .feature-card:hover {
@@ -97,13 +97,12 @@ body {
   animation: fadeIn 0.5s ease-out;
 }
 
-/* src/App.css or src/components/RecipeList.css */
 .btn-primary {
-  color: #fff; /* Default text color */
+  color: #fff;
 }
 
 .btn-primary:hover {
-  color: #000; /* Darker text color on hover */
-  background-color: #007bff; /* Keep the background color the same or adjust as needed */
-  border-color: #0056b3; /* Optional: Change border color on hover */
+  color: #000; 
+  background-color: #007bff;
+  border-color: #0056b3;
 }

@@ -8,9 +8,8 @@ function Signup() {
 
   const handleSignup = (e) => {
     e.preventDefault();
-    // Save user data to localStorage (or a backend in a real app)
     localStorage.setItem('user', JSON.stringify({ username, password }));
-    navigate('/login'); // Redirect to login after signup
+    navigate('/login'); 
   };
 
   return (

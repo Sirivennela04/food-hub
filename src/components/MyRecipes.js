@@ -10,13 +10,12 @@ function MyRecipes() {
     return <div>Please log in to see your recipes.</div>;
   }
 
-  // Filter recipes for the logged-in user
   const userRecipes = recipes.filter(recipe => recipe.username === user.username);
 
   const handleDelete = (index) => {
     const updatedRecipes = userRecipes.filter((_, i) => i !== index);
     setRecipes(updatedRecipes);
-    localStorage.setItem('recipes', JSON.stringify(updatedRecipes)); // Update local storage
+    localStorage.setItem('recipes', JSON.stringify(updatedRecipes));
   };
 
   return (

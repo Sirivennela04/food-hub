@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -73,3 +74,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # food-hub
 A recipe sharing platform
 >>>>>>> bee953014a373f3ecc8fe309f23c318222ab4524
+=======
+# food-hub
+A recipe sharing platform
+>>>>>>> 9bc7f50ac9a644fc535f34c85d8a113d5cb093b3

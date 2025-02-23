@@ -10,9 +10,9 @@ function Login({ onLogin }) {
     e.preventDefault();
     const user = JSON.parse(localStorage.getItem('user'));
     if (user && user.username === username && user.password === password) {
-      localStorage.setItem('isLoggedIn', 'true'); // Set login status
-      onLogin(); // Call the onLogin function to update the state in App
-      navigate('/'); // Redirect to My Recipes page after login
+      localStorage.setItem('isLoggedIn', 'true');
+      onLogin(); 
+      navigate('/');
     } else {
       alert('Invalid credentials');
     }

@@ -9,8 +9,8 @@ function AddRecipe() {
     ingredients: '',
     instructions: '',
     timeRequired: '',
-    image: '', // Change to an empty string for URL input
-    username: JSON.parse(localStorage.getItem('user')).username // Add username here
+    image: '',
+    username: JSON.parse(localStorage.getItem('user')).username
   });
 
   const handleChange = (e) => {
@@ -20,7 +20,7 @@ function AddRecipe() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addRecipe(recipe); // Add the recipe to the context
+    addRecipe(recipe);
     setRecipe({ title: '', cuisine: '', ingredients: '', instructions: '', timeRequired: '', image: '', username: recipe.username }); // Reset form
   };
 

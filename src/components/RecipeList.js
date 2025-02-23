@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { RecipeContext } from '../RecipeContext';
 
 function RecipeList() {
-  const { recipes } = useContext(RecipeContext); // Get recipes from context
+  const { recipes } = useContext(RecipeContext);
   const [searchQuery, setSearchQuery] = useState('');
   const [filteredRecipes, setFilteredRecipes] = useState(recipes);
 

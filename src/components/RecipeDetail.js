@@ -4,15 +4,14 @@ import { RecipeContext } from '../RecipeContext';
 
 function RecipeDetail() {
   const { id } = useParams();
-  const { recipes } = useContext(RecipeContext); // Get recipes from context
-  const recipe = recipes[id - 1]; // Assuming id is 1-based and matches the index
+  const { recipes } = useContext(RecipeContext);
+  const recipe = recipes[id - 1]; 
 
   if (!recipe) {
     return <div>Recipe not found!</div>;
   }
 
-  // Split the instructions by line breaks or a specific delimiter
-  const instructionsList = recipe.instructions.split('\n'); // Assuming instructions are separated by new lines
+  const instructionsList = recipe.instructions.split('\n');
 
   return (
     <div className="row">

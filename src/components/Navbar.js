@@ -37,8 +37,8 @@ function Navbar({ isLoggedIn }) {
               </>
             ) : (
               <button className="btn btn-outline-light" onClick={() => {
-                localStorage.removeItem('isLoggedIn'); // Log out
-                window.location.reload(); // Reload to update the navbar
+                localStorage.removeItem('isLoggedIn'); 
+                window.location.reload();
               }}>Logout</button>
             )}
           </div>
